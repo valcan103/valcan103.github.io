@@ -1,0 +1,642 @@
+/*reset*/
+*
+    margin: 0
+    padding: 0
+    font-family: 'Jua', sans-serif
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td 
+    margin:0
+    padding:0
+
+a 
+    color: inherit
+    text-decoration: none
+    &:hover
+        text-decoration: none
+        color: inherit
+
+li 
+    list-style: none
+address, em , i 
+    font-style: none
+
+h1,h2,h3,h4,h5,h6 
+    font-size: inherit
+
+.container
+    overflow: hidden
+    .to_top
+        width: 50px
+        height: 50px
+        position: fixed
+        top: 90%
+        right: 5%
+        border: 1px solid black
+        border-radius: 50%
+        background: #fff
+        z-index: 10
+        &:after
+            font-family: "FontAwesome"
+            content: "\f102"
+            width: 50px
+            height: 50px
+            font-size: 30px
+            cursor: pointer
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            z-index: 10
+        &:hover
+            &:after
+                animation: to_top 1s infinite
+    .divide
+        &:after
+            content: ""
+            display: block
+            width: 80%
+            height: 1px
+            background: #868686
+            margin: 200px auto
+header
+    display: block
+    width: 100%
+    height: 800px
+    overflow: hidden
+    .nav_container
+        height: 100px
+        padding: 5px 20px   
+        background: #000
+        align-items: center
+        box-sizing: border-box
+        transition: all 0.5s
+        .logo
+            width: 10%
+            height: 100%
+            display: flex
+            color: #fff
+            font-size: 25px
+            justify-content: center
+            align-items: center
+            float: left
+            font-weight: bold
+            transition: all 0.5s
+            &:hover
+                color: #2636c4
+                font-size: 30px
+        .menu
+            display: flex
+            width: 80%
+            height: 100%
+            justify-content: left
+            align-items: center
+            font-size: 18px
+            padding: 0 30px
+            li
+                display: flex
+                justify-content: center
+                position: relative
+                a
+                    width: 100%
+                    margin: 0 20px
+                    color: #fff
+                    transition: all 0.5s
+                    cursor: pointer
+                    &:after
+                        content: ""
+                        width: 0
+                        height: 2px
+                        background: #2636c4
+                        position: absolute
+                        top: 35px
+                        left: 50%
+                        transform: translateX(-50%)
+                        transition: all 0.5s
+                &:hover
+                    a
+                        color: #2636c4
+                        font-size: 22px
+                        &:after
+                            width: 80%
+        &.active
+            width: 100%
+            height: 80px
+            position: fixed
+            background: linear-gradient(to right, rgba(134, 97, 148) 10%, rgba(52, 40, 102) 60%, rgba(28, 19, 62))
+            z-index: 10
+    .img_container
+        width: 100%
+        height: 700px
+        position: relative
+        .title
+            font-size: 50px
+            font-family: 'Jua', sans-serif
+            position: absolute
+            top: 20%
+            left: 20%
+            line-height: 40px
+        .description
+            font-size: 25px
+            font-family: 'Jua', sans-serif
+            position: absolute
+            top: 35%
+            left: 30%
+            line-height: 20px
+        .splitting
+            .char
+                animation: fadeIn 1s cubic-bezier(.5, 0, .5, 1) both
+                animation-delay: calc(0.1s * var(--char-index))
+                display: inline-block
+        img
+            width: 100%
+            height: 1000px
+        .more
+            position: absolute
+            top: 80%
+            left: 50%
+            transform: translateX(-50%)
+            background: #fff
+            padding: 20px
+            border-radius: 5px
+            cursor: pointer
+            transition: all 0.5s
+            &:hover
+                background: #4b7fe0
+=content_left
+    display: flex
+    width: 30%
+    height: 70%
+    border: 1px solid black
+    border-radius: 10px
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    padding: 30px
+    .title
+        font-size: 50px
+        text-align: center
+    .description
+        padding: 50px
+        .description_detail
+            font-size: 19px
+            line-height: 40px
+            text-align: center
+.content
+    margin: 100px 0 300px 0 //임시
+    .content1
+        display: flex
+        justify-content: center
+        height: 500px
+        align-items: center
+        .content1_left
+            +content_left
+        .slide
+            width: 60%
+            height: 100%
+            display: flex
+            align-items: flex-start
+            img
+                height: 80%
+                margin: 0 20px
+                transition: all 0.3s
+                position: relative
+                transform: scale(0.9)
+                &:hover
+                    transform: scale(1.1) translateX(10px) translateY(10px)
+            .slick-track
+                display: flex
+                align-items: center
+                height: 500px
+        .slick-dots
+            display: flex
+            position: absolute
+            top: 90%
+            left: 50%
+            transform: translateX(-50%)
+            button
+                border: none
+                font-size: 15px
+                width: 100px
+                margin: 0 10px
+                border-radius: 10px
+                &:hover
+                    font-size: 20px
+                    font-weight: bold
+        .slick-list
+            margin-left: 10%
+    .content2
+        margin: 0 auto
+        .cont2_container
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-end
+            align-items: center
+            flex-direction: row-reverse
+            .content2_left
+                +content_left
+                .description
+                    padding: 30px
+            .cards
+                width: 50%
+                display: flex
+                flex-wrap: wrap
+                padding: 50px 20px
+                justify-content: center
+                align-items: center
+                li
+                    width: 200px
+                    margin: 20px
+                    .card
+                        position: relative
+                        width: 100%
+                        height: 250px
+                        border: 1px solid black
+                        overflow: hidden
+                        img
+                            width: 100%
+                            height: 100%
+                            transition: all 0.5s
+                        .hover_desc
+                            position: absolute
+                            width: 100%
+                            height: 40%
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            top: 60%
+                            left: 0
+                            background: #fff
+                            padding: 10px
+                            box-sizing: border-box
+                            font-weight: bold
+                            opacity: 0
+                            transform: translateY(100%)
+                            transition: all 0.5s
+                    &:hover
+                        box-shadow: 20px 20px 40px black
+                        .hover_desc
+                            opacity: 0.7
+                            transform: translateY(0)
+                        &:nth-child(1)
+                            img
+                                filter: blur(3px)
+                        &:nth-child(2)
+                            img
+                                filter: brightness(50%)
+                        &:nth-child(3)
+                            img
+                                filter: sepia(40%)
+                        &:nth-child(4)
+                            img
+                                filter: hue-rotate(90deg)
+                        &:nth-child(5)
+                            img
+                                filter: contrast(200%)
+                        &:nth-child(6)
+                            img
+                                filter: grayscale(80%)
+    .content3
+        width: 90%
+        margin: 0 auto
+        .cont3_container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 20px
+            .content3_left
+                +content_left
+                width: 40%
+                float: left
+                .title
+                    font-size: 40px
+                .description
+                    margin-top: 20px
+                    padding: 30px
+            .arcodian_container
+                display: flex
+                flex-direction: column
+                width: 50%
+                .arcodian
+                    border: 1px solid black
+                    border-radius: 20px
+                    padding: 20px
+                    .question
+                        font-size: 25px
+                        position: relative
+                        &:after
+                            content: "\2b"
+                            position: absolute
+                            top: 50%
+                            right: 1%
+                            cursor: pointer
+                            transform: translateY(-50%)
+                            transition: all 0.3s
+                    .answer
+                        font-size: 20px
+                        padding: 15px 30px
+                        display: none
+                    &.active
+                        background: #4b7fe0
+                        .question
+                            &:after
+                                transform: rotate(45deg)
+                                font-size: 40px
+                                top: -20%
+                                right: 0
+    .content4
+        margin: 0 auto
+        .cont4_container
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            .content4_left
+                +content_left
+            .open_modal
+                font-size: 30px
+                background: #fff
+                padding: 30px 20px 20px
+                border-radius: 50% 50% 10px 10px
+        .modal_bg
+            width: 100vw
+            height: 100vh
+            display: none
+            position: fixed
+            background: #868686
+            opacity: 0.7
+            z-index: 11
+            top: 0
+            left: 0
+        .modal
+            position: fixed
+            display: none
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 60%
+            height: 80%
+            background: #fff
+            opacity: 1
+            z-index: 13
+            padding: 30px
+            .close_modal
+                &:after
+                    content: "\2b"
+                    position: absolute
+                    transform: rotate(45deg)
+                    font-size: 60px
+                    top: -2%
+                    right: 1%
+                    cursor: pointer
+            img
+                width: 50%
+                height: 100%
+            .modal_container
+                width: 45%
+                height: 60%
+                float: right
+                border: 1px solid black
+                border-radius: 10%
+                margin: 15% 0
+                padding: 10% 0
+                box-sizing: border-box
+                .modal_desc
+                    text-align: center
+                    vertical-align: middle
+                    font-size: 20px
+                    line-height: 40px
+
+=mount
+    width: 200px
+    height: 200px
+    background: #0d7223
+    transform: rotate(45deg)
+    position: absolute
+    border-radius: 10px
+    z-index: -1
+footer
+    width: 100%
+    height: 200px
+    margin-top: 200px
+    position: relative
+    .active
+        .mount1
+            +mount
+            top: -30%
+        .mount2
+            +mount
+            width: 400px
+            height: 400px
+            background: #0b581c
+            top: -40%
+            left: 10%
+        .mount3
+            +mount
+            width: 450px
+            height: 450px
+            background: #073812
+            top: -50%
+            right: 0
+        .sun
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            background: #e65d0e
+            box-shadow: 5px 5px 100px red
+            position: absolute
+            top: -80%
+            left: 50%
+            animation: sun 10s infinite
+            z-index: -2
+        .moon
+            width: 100px
+            height: 100px
+            border-radius: 50%
+            background: #6d6c5f
+            box-shadow: 5px 5px 100px yellow
+            position: absolute
+            top: 80%
+            left: 50%
+            animation: moon 10s infinite
+            z-index: -2
+    .footer_content
+        width: 100%
+        height: 200px
+        background:  #3b315f
+        z-index: 2
+        padding: 3%
+        span
+            color: #fff
+            display: block
+            padding: 10px
+
+@media screen and (max-width: 1200px) 
+    =content_left
+        display: flex
+        width: 40%
+        height: 70%
+        border: 1px solid black
+        border-radius: 10px
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        padding: 25px
+        .title
+            font-size: 35px
+            text-align: center
+        .description
+            padding: 30px
+            .description_detail
+                line-height: 30px
+    .content
+        .content1
+            .content1_left
+                +content_left
+                width: 30%
+        .content2
+            .cont2_container
+                .content2_left
+                    +content_left
+        .content3
+            .cont3_container
+                .content3_left
+                    +content_left
+                    .description
+                        padding: 10px
+                .arcodian_container
+                    width: 50%
+                    .arcodian
+                        padding: 15px
+        .content4
+            .cont4_container
+                .content4_left
+                    +content_left
+            .modal
+                .modal_container
+                    .modal_desc
+                        font-size: 16px
+                        line-height: 30px
+
+@media screen and (max-width: 800px) 
+    =content_left
+        display: flex
+        width: 30%
+        height: 70%
+        border: 1px solid black
+        border-radius: 10px
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        padding: 20px
+        .title
+            font-size: 30px
+            text-align: center
+        .description
+            padding: 20px 10px 10px
+            .description_detail
+                line-height: 25px
+    header
+        .nav_container
+            display: flex
+            justify-content: space-between
+            .menu
+                width: 60%
+                justify-content: right
+        .img_container
+            .title
+                font-size: 35px
+            .description
+                font-size: 20px
+    .content
+        .content1
+            .content1_left
+                +content_left
+            .slide
+                img
+                    height: 70%
+            .slick-dots
+                button
+                    width: 70px
+        .content2
+            .cont2_container
+                align-items: flex-start
+                .content2_left
+                    +content_left
+        .content3
+            .cont3_container
+                .content3_left
+                    +content_left
+                    width: 40%
+                    .description
+                        padding: 10px
+                .arcodian_container
+                    width: 50%
+                    .arcodian
+                        padding: 15px
+                        .question
+                            font-size: 20px
+                        .answer
+                            font-size: 15px
+        .content4
+            .cont4_container
+                .content4_left
+                    +content_left
+                .open_modal
+                    font-size: 20px
+            .modal
+                img
+                    width: 60%
+                    height: 60%
+                    margin: 20% 20% 5%
+                .modal_container
+                    padding: 10% 8px
+                    width: auto
+                    height: auto
+                    float: none
+                    margin: 0
+                    .modal_desc
+                        font-size: 16px
+                        line-height: 30px
+
+
+@keyframes fadeIn
+    0%
+        opacity: 0
+        transform: translateY(-50px) rotate(45deg)
+@keyframes to_top
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(-10%)
+    100%
+        transform: translateY(10%)
+@keyframes sun
+    0%
+        transform: translateX(0)
+    25%
+        top: 0
+        transform: translateX(200px)
+    50%
+        top: 40%
+        transform: translateX(0)
+    75%
+        top: 0
+        transform: translateX(-200px)
+    100%
+        top: -80%
+        transform: translateX(0)
+@keyframes moon
+    0%
+        transform: translateX(0px)
+    25%
+        top: 0
+        transform: translateX(-200px)
+    50%
+        top: -80%
+        transform: translateX(0)
+    75%
+        top: 0
+        transform: translateX(200px)
+    100%
+        top: 40%
+        transform: translateX(0)
