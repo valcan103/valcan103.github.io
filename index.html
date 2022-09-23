@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="to_top"></div>
+        <header>
+            <div class="nav_container">
+                <nav>
+                    <div class="left"><a href="#" class="home">Home</a></div>
+                    <ul class="right">
+                        <li class="to_about_me"><a href="#">About Me</a></li>
+                        <li>
+                            <a href="#" class="to_portfolio">Portfolio</a>
+                            <ul>
+                                <li><a href="#" class="to_ninestars">Ninestars</a></li>
+                                <li><a href="#" class="to_illdy">Illdy</a></li>
+                                <li><a href="#" class="to_jquery">jquery연습</a></li>
+                                <li><a href="#" class="to_react">React연습</a></li>
+                            </ul>
+                        </li>
+                        <li class="to_contact"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section1">
+            <div class="main_right">
+                <img src="img/메인_배경화면.jpg" alt="" />
+            </div>
+            <div class="main_left">
+                <div class="desc">
+                    <p>프론트엔드 개발자를 꿈꾸는</p>
+                    <p><span class="name">이지형</span>입니다</p>
+                </div>
+                <div class="fade_button"><a href="#">더 알아보기</a></div>
+            </div>
+        </section>
+        <main>
+            <section class="section2">
+                <div class="s2_container">
+                    <h1>About Me</h1>
+                    <div class="desc">
+                        안녕하세요, 프론트엔드 개발자를 꿈꾸는 이지형입니다.<br />
+                        먼저 저의 성격은 소심하고 조용한 편이지만,<br />
+                        목표가 생기면 이루기 위해 노력하는 끈기를 갖고 있습니다.<br />
+                        평소 공부 방식은 인터넷 강의를 통해 먼저 배우고,<br />
+                        이후에 모르는 내용은 추가로 검색하며 배운 내용을 복습하는 방식으로 공부를 했습니다.<br />
+                        아직 포트폴리오를 가득 채우기에는 부족하지만,<br />
+                        앞으로도 하나 하나씩 채우며 훌륭한 프론트엔드 개발자가 되기위해 노력하겠습니다.<br />
+                    </div>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="title">
+                    Portfolio
+                    <div class="control_all">
+                        <div class="up_all">모두 접기</div>
+                        <div class="down_all">모두 펼치기</div>
+                    </div>
+                </div>
+                <div class="s3_container">
+                    <div class="ninestars active">
+                        <div class="theme_title">
+                            Ninestars
+                            <div class="toggleSlide">
+                                <i class="fa-solid fa-sort-up"></i>
+                            </div>
+                        </div>
+                        <div class="ninestars_container">
+                            <div class="theme_desc">
+                                <div class="skill">
+                                    <ul>
+                                        <li>html</li>
+                                        <li>css(sass)</li>
+                                        <li>js(jquery)</li>
+                                    </ul>
+                                </div>
+                                <div class="desc">
+                                    html과 css 실력을 기르기 위해서 웹 무료 템플릿 중 <br />
+                                    ninestars의 메인 화면을 따라 만드는 연습을 했습니다. <br />
+                                    색 코드와 이미지 등 디자인 부분을 제외하고 최대한 비슷하게 스스로 만들어 보았으며,<br />
+                                    화면 크기에 따른 사이트의 변화 또한 비슷하게 만들어 보았습니다.<br />
+                                    또한, jquery를 이용하여 몇몇 기능들을 만들어 보며 연습해 볼 수 있었습니다. <br />
+                                    <br />
+                                    <div class="desc_title">기억에 남는 내용</div>
+                                    jquery를 이용하여 필터 기능을 새롭게 배울 수 있었습니다. <br />
+                                    먼저 직접 만들어 보기 위해 해당하는 html요소에 데이터 속성을 부여하여 <br />
+                                    표시할 내용과 일치하는 경우 보여지게 만들어서 대략적으로 기능을 완성하였고,<br />
+                                    조금 더 깔끔하게 만들기 위해 검색을 통해 filter 기능을 배워<br />
+                                    데이터 속성 대신 class를 이용하여 코드를 간략하게 만들 수 있었습니다. <br />
+                                    <br />
+                                    <div class="desc_title">아쉬운 내용</div>
+                                    먼저 드롭다운 메뉴를 만드는데 시간이 생각보다 오래 걸렸던 점이 아쉬웠고, <br />
+                                    filter 기능에서 특정 필터에서 다른 특정 필터로 바꿀때는 버벅 거림이 없었지만, <br />
+                                    전체에서 특정 필터로, 특정 필터에서 전체로 바꾸는 경우 약간 어색하게 움직이는 점이 아쉬웠고, <br />
+                                    해당하는 내용에 따라 네비게이션 바의 색이 들어오게 만들 때 직접적으로 스크롤량을 체크하여 구현하긴 했지만, <br />
+                                    코드가 불필요하게 길어지는 느낌이 들어 아쉬웠습니다. <br />
+                                    <br />
+                                </div>
+                                <div class="screenshots">
+                                    <div class="img_container">
+                                        <img src="img/ninestars/1.PNG" alt="" />
+                                        <img src="img/ninestars/2.PNG" alt="" />
+                                        <img src="img/ninestars/3.PNG" alt="" />
+                                        <img src="img/ninestars/4.PNG" alt="" />
+                                        <img src="img/ninestars/4-1.PNG" alt="" />
+                                        <img src="img/ninestars/5.PNG" alt="" />
+                                        <img src="img/ninestars/6.PNG" alt="" />
+                                        <img src="img/ninestars/7.PNG" alt="" />
+                                        <img src="img/ninestars/8.PNG" alt="" />
+                                        <img src="img/ninestars/9.PNG" alt="" />
+                                    </div>
+                                </div>
+                                <a href="https://github.com/valcan103/ninestars" target="_blank" class="github">>>> 깃허브 코드 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="illdy active">
+                        <div class="theme_title">
+                            Illdy
+                            <div class="toggleSlide">
+                                <i class="fa-solid fa-sort-up"></i>
+                            </div>
+                        </div>
+                        <div class="illdy_container">
+                            <div class="theme_desc">
+                                <div class="skill">
+                                    <ul>
+                                        <li>html</li>
+                                        <li>css(sass)</li>
+                                        <li>js(jquery)</li>
+                                    </ul>
+                                </div>
+                                <div class="desc">
+                                    html과 css 실력을 기르기 위해서 웹 무료 템플릿 중 2번째로 <br />
+                                    illdy의 메인 화면을 따라 만드는 연습을 했습니다. <br />
+                                    마찬가지로 색 코드와 이미지 등 디자인 부분을 제외하고 최대한 비슷하게 스스로 만들어 보았으며, <br />
+                                    화면 크기에 따른 사이트의 변화 또한 비슷하게 만들어 보았습니다.<br />
+                                    또, jquery를 이용하여 몇몇 기능들을 연습하고, 새롭게 배워 볼 수 있었습니다.<br />
+                                    <br />
+                                    <div class="desc_title">기억에 남는 내용</div>
+                                    background-attatchment를 fixed로 설정하여 스크롤 할 때 새로운 느낌을 받았고, <br />
+                                    빗금의 배경 이미지가 이미지 그 자체가 아닌 타일 하나를 반복시켜<br />
+                                    빗금 이미지를 만들 수 있다는 것을 활용할 수 있게 되었고, <br />
+                                    jquery의 animate 를 이용하여 정해진 목표 수치까지 애니메이션으로 숫자를 증가시킬 수 있는 방법을 새롭게 배웠습니다. <br />
+                                    <br />
+                                    <div class="desc_title">아쉬운 내용</div>
+                                    미디어 쿼리를 이용할 때 배경 이미지를 자연스럽게 늘리거나 줄이는 부분에서 <br />
+                                    아직 css를 이용하여 background-image에 효과를 주는데 미숙함을 느꼈고, <br />
+                                    정해진 수치까지 숫자가 증가하는 애니메이션을 먼저 직접 만들어 보려고 했지만, <br />
+                                    생각했던 결과와는 다른 결과가 나와서 검색을 통해 해결했던 점이 아쉬웠습니다. <br />
+                                    <br />
+                                </div>
+                                <div class="screenshots">
+                                    <div class="img_container">
+                                        <img src="img/illdy/1.PNG" alt="" />
+                                        <img src="img/illdy/2.PNG" alt="" />
+                                        <img src="img/illdy/3.PNG" alt="" />
+                                        <img src="img/illdy/4.PNG" alt="" />
+                                        <img src="img/illdy/5.PNG" alt="" />
+                                        <img src="img/illdy/6.PNG" alt="" />
+                                        <img src="img/illdy/7.PNG" alt="" />
+                                        <img src="img/illdy/8.PNG" alt="" />
+                                        <img src="img/illdy/9.PNG" alt="" />
+                                    </div>
+                                </div>
+                                <a href="https://github.com/valcan103/illdy" target="_blank" class="github">>>> 깃허브 코드 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jquery active">
+                        <div class="theme_title">
+                            Jquery 연습
+                            <div class="toggleSlide">
+                                <i class="fa-solid fa-sort-up"></i>
+                            </div>
+                        </div>
+                        <div class="jquery_container">
+                            <div class="theme_desc">
+                                <div class="skill">
+                                    <ul>
+                                        <li>html</li>
+                                        <li>css(sass)</li>
+                                        <li>js(jquery)</li>
+                                    </ul>
+                                </div>
+                                <div class="desc">
+                                    jquery 연습, 복습을 하기 위해 강의를 통해 배웠던 기능이나,<br />
+                                    만들어 보고 싶었던 기능을 직접 만들어보는 연습을 했습니다.<br />
+                                    먼저 일정량 스크롤 하면 네비게이션 바가 고정되게 만들어보았고,<br />
+                                    강의에서 배운 캐러셀 갤러리 복습, 호버 이펙트 복습, <br />
+                                    아코디언 메뉴 만들어보기, 모달 창 만들어보기, 간단한 애니메이션 만들기 등을 연습했습니다. <br />
+                                    <br />
+                                    <div class="desc_title">기억에 남는 내용</div>
+                                    강의에서 배웠던 slick.js를 이용하여 활용하는 법을 복습했고,<br />
+                                    jquery 공부를 간단하게 한 뒤, <br />
+                                    관심이 있었던 아코디언 메뉴를 스스로 만들 수 있어서 뿌듯했고,<br />
+                                    모달 창도 기능은 제대로 구현한 것 같아서 만족스러웠습니다.<br />
+                                    <br />
+                                    <div class="desc_title">아쉬운 내용</div>
+                                    아직 자바 스크립트를 이용한 기능들을 많이 알지 못해서 많이 만들어 보지 못한게 아쉬웠고, <br />
+                                    페이지를 열었을 때 기능을 처음으로 작동시키면 버벅거림이 있다는 점이 아쉬웠습니다. <br />
+                                    <br />
+                                </div>
+                                <div class="screenshots">
+                                    <div class="img_container">
+                                        <img src="img/jquery연습/1.PNG" alt="" />
+                                        <img src="img/jquery연습/2.PNG" alt="" />
+                                        <img src="img/jquery연습/3.PNG" alt="" />
+                                        <img src="img/jquery연습/4.PNG" alt="" />
+                                        <img src="img/jquery연습/5.PNG" alt="" />
+                                        <img src="img/jquery연습/5-1.PNG" alt="" />
+                                    </div>
+                                </div>
+                                <a href="https://github.com/valcan103/jqueryPractice" target="_blank" class="github">>>> 깃허브 코드 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="react active">
+                        <div class="theme_title">
+                            React연습
+                            <div class="toggleSlide">
+                                <i class="fa-solid fa-sort-up"></i>
+                            </div>
+                        </div>
+                        <div class="react_container">
+                            <div class="theme_desc">
+                                <div class="skill">
+                                    <ul>
+                                        <li>html</li>
+                                        <li>css</li>
+                                        <li>js</li>
+                                        <li>React</li>
+                                    </ul>
+                                </div>
+                                <div class="desc">
+                                    html과 css를 자세하게 공부 하기 전, <br />
+                                    리액트를 이용하여 유튜브를 비슷하게 만들어 보는 강의를 본 후<br />
+                                    강의에서 배운 내용들을 바탕으로 많은 부분을 참고하여 게시판을 만들어 보는 연습을 했습니다. <br />
+                                    아직 많은 부분을 이해하진 못했지만, 리액트를 경험해 볼 수 있는 기회였습니다. <br /><br />
+                                    (회원가입, 로그인, 로그아웃, 정보수정, 관리자 기능, 게시물 관리(쓰기, 수정, 삭제, 공개 범위 설정), <br />
+                                    내가 쓴 글 보기, 게시물 즐겨찾기, 댓글 관리(쓰기, 수정, 삭제) 등의 기능을 연습했습니다.) <br />
+                                    <br />
+                                    <div class="desc_title">기억에 남는 내용</div>
+                                    배웠던 내용 중 비공개 게시물은 다른 사람들에게는 보이지 않게, <br />
+                                    관리자에게는 수정 및 삭제까지 관리 할 수 있도록 추가적으로 만들었던 점과, <br />
+                                    강의에서 댓글 삭제 기능을 만들고 확인해 봤을 때, <br />
+                                    상위 댓글을 지우면 하위 댓글들이 게시판에서는 삭제된 것 처럼 보이지만, <br />
+                                    실제 mongoDb에서는 삭제되지 않아서 직접 생각하여 기능을 완성시킨 점이 가장 기억에 남았습니다. <br />
+                                    <br />
+                                    <div class="desc_title">아쉬운 내용</div>
+                                    css를 자세하게 배우기 전이라 만들고 싶었던 기능들에만 집중했어서 보이는 화면이 어색한 점과, <br />
+                                    게시글을 원하는 만큼 표시하는 방법, 페이지를 나누는 방법 등 아직 구현해 보지 못했던 기능들이 있었고, <br />
+                                    리액트 경험을 목적으로 했어서 아직 리액트를 능숙하게 사용하지 못하는 점이 아쉬웠습니다.<br />
+                                    <br />
+                                </div>
+                                <div class="screenshots">
+                                    <div class="img_container">
+                                        <img src="img/react/0.PNG" alt="" />
+                                        <img src="img/react/0-1.PNG" alt="" />
+                                        <img src="img/react/0-2.PNG" alt="" />
+                                        <img src="img/react/1.PNG" alt="" />
+                                        <img src="img/react/1-1.PNG" alt="" />
+                                        <img src="img/react/1-2.PNG" alt="" />
+                                        <img src="img/react/2.PNG" alt="" />
+                                        <img src="img/react/2-1.PNG" alt="" />
+                                        <img src="img/react/3.PNG" alt="" />
+                                        <img src="img/react/3-1.PNG" alt="" />
+                                        <img src="img/react/4.PNG" alt="" />
+                                        <img src="img/react/4-1.PNG" alt="" />
+                                        <img src="img/react/4-2.PNG" alt="" />
+                                        <img src="img/react/4-3.PNG" alt="" />
+                                        <img src="img/react/4-4.PNG" alt="" />
+                                        <img src="img/react/4-5.PNG" alt="" />
+                                    </div>
+                                </div>
+                                <a href="https://github.com/valcan103/makeBoard" target="_blank" class="github">>>> 깃허브 코드 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section4">
+                <div class="s4_img_container">
+                    <div class="s4_container">
+                        <h1>Contact</h1>
+                        <div class="desc">
+                            준비한 포트폴리오를 끝까지 봐주셔서 감사합니다.
+                            <br />
+                            이후로는 연습, 복습한 내용을 완성하면 바로 포트폴리오에 추가할 예정이며,
+                            <br />
+                            앞으로도 훌륭한 프론트엔드 개발자가 되기 위해 노력하겠습니다! <br />
+                        </div>
+                        <div class="detail">
+                            <div class="email">이메일: daa33@naver.com <br /></div>
+                            <div class="phone">전화번호: 클릭해 주세요! <br /></div>
+                            <div class="github"><a href="https://github.com/valcan103" target="_blank">깃허브 바로가기</a><br /></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                최종 수정 날짜 : 2022-09-23 <br />
+                최종 수정 내용 : -(포트폴리오 완성)-22.09.23 <br />
+            </footer>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" type="text/javascript"></script>
+        <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/c0f9386f5e.js" crossorigin="anonymous"></script>
+        <script src="js/slick.js"></script>
+    </body>
+</html>
