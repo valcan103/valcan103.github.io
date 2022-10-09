@@ -70,6 +70,11 @@ $(function () {
             .stop()
             .animate({ scrollTop: $(".react").offset().top - 80 }, 1000);
     });
+    $(".to_react_todo").on("click", () => {
+        $("html")
+            .stop()
+            .animate({ scrollTop: $(".react_todo").offset().top - 80 }, 1000);
+    });
     $(".to_contact").on("click", () => {
         $("html")
             .stop()
