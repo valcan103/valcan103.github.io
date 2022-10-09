@@ -374,6 +374,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .ninestars .ninestars_container .theme_desc .screenshots .img_container .slick-next {
@@ -392,6 +393,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .ninestars .ninestars_container .theme_desc .screenshots .img_container .slick-dots {
@@ -518,6 +520,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .illdy .illdy_container .theme_desc .screenshots .img_container .slick-next {
@@ -536,6 +539,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .illdy .illdy_container .theme_desc .screenshots .img_container .slick-dots {
@@ -674,6 +678,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .jquery .jquery_container .theme_desc .screenshots .img_container .slick-next {
@@ -692,6 +697,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .jquery .jquery_container .theme_desc .screenshots .img_container .slick-dots {
@@ -830,6 +836,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .react .react_container .theme_desc .screenshots .img_container .slick-next {
@@ -848,6 +855,7 @@ header .nav_container nav .right ul li {
   width: 50px;
   height: 50px;
   font-size: 25px;
+  cursor: pointer;
   transform: translateY(-10%);
 }
 .section3 .s3_container .react .react_container .theme_desc .screenshots .img_container .slick-dots {
@@ -906,6 +914,173 @@ header .nav_container nav .right ul li {
 }
 .section3 .s3_container .react .react_container .theme_desc .screenshots .img_container .slick-dots .slick-active {
   background: #71c4fc;
+}
+.section3 .s3_container .react_todo {
+  padding: 50px;
+  border-radius: 10px;
+}
+.section3 .s3_container .react_todo .theme_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  font-family: "Fredoka One", cursive;
+}
+.section3 .s3_container .react_todo .theme_title .toggleSlide {
+  display: flex;
+  width: 10%;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc {
+  font-family: "Nanum Pen Script", cursive;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill {
+  font-size: 25px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul {
+  display: flex;
+  margin-top: 30px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li {
+  position: relative;
+  padding-left: 40px;
+  color: orange;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #000;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(2) {
+  color: pink;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(2):before {
+  left: 25%;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(3) {
+  color: khaki;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(3):before {
+  left: 20%;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .desc {
+  margin: 30px 0 0 100px;
+  font-size: 25px;
+  line-height: 40px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .desc .desc_title {
+  font-size: 40px;
+  margin-left: -50px;
+  padding-bottom: 20px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container {
+  position: relative;
+  margin-top: 50px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-slide {
+  margin: 0 20px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-prev {
+  position: absolute;
+  top: 40%;
+  left: -3%;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #fcebe3;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-prev:hover {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-next {
+  position: absolute;
+  top: 40%;
+  right: -3%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #fcebe3;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-next:hover {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots li {
+  margin: 0 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #f3c1aa;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  color: transparent;
+  border: none;
+  background: none;
+  transform: translateX(-5px) translateY(-5px);
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots li button:hover {
+  cursor: pointer;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots .slick-active {
+  background: #fcebe3;
+  width: 15px;
+  height: 15px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots .slick-active button {
+  width: 30px;
+  height: 30px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .github {
+  font-size: 30px;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(2) {
+  color: blue;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(3):before {
+  left: 30%;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .skill ul li:nth-child(4) {
+  color: skyblue;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-prev {
+  background: #646464;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-next {
+  background: #646464;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots li {
+  border: 1px solid #272727;
+}
+.section3 .s3_container .react_todo .react_todo_container .theme_desc .screenshots .img_container .slick-dots .slick-active {
+  background: #646464;
 }
 
 .section4 {

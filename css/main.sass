@@ -263,6 +263,7 @@ header
                         width: 50px
                         height: 50px
                         font-size: 25px
+                        cursor: pointer
                         transform: translateY(-10%)
                 .slick-next
                     position: absolute
@@ -279,6 +280,7 @@ header
                         width: 50px
                         height: 50px
                         font-size: 25px
+                        cursor: pointer
                         transform: translateY(-10%)
                 .slick-dots
                     display: flex
@@ -419,6 +421,35 @@ header
                                     border: 1px solid #b5dffc
                                 .slick-active
                                     background: #71c4fc
+        .react_todo
+            padding: 50px
+            // background: #646464
+            border-radius: 10px
+            +theme_title
+            .react_todo_container
+                +theme_desc
+                .theme_desc
+                    .skill
+                        ul
+                            li
+                                &:nth-child(2)
+                                    color: blue
+                                &:nth-child(3)
+                                    &:before
+                                        left: 30%
+                                &:nth-child(4)
+                                    color: skyblue
+                    .screenshots
+                        .img_container
+                            .slick-prev
+                                    background: #646464
+                            .slick-next
+                                    background: #646464
+                            .slick-dots
+                                li
+                                    border: 1px solid #272727
+                                .slick-active
+                                    background: #646464
 .section4
     display: flex
     position: relative
